@@ -21,4 +21,4 @@ To avoid CORS issues, run a local proxy server (e.g., using cors-anywhere):
 Simply integrate the Tabs component into your React application to provide users with an interactive way to view content.
 
 # Video Demonstration
-[Watch the Video](https://drive.google.com/file/d/1pBrLrWZMVzAfBmJHwe45iz9-ZEuYwPCa/view?usp=drive_link)
+[Watch the Video](https://drive.google.com/file/d/1pcf1NxjJQO_LsmFcBSVnYMDEbpUElJJN/view?usp=drive_link)
