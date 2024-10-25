@@ -14,20 +14,21 @@ const Tabs = () => {
                 const requests = Array.from({ length: 4 }, (_, index) => {
                     const id = index + 1;
 
-                    // Check if data is already in cache
+                    // Check cache first
                     if (cache[id]) {
                         return Promise.resolve(cache[id]);
                     }
 
-                    // Fetch data from the Loripsum API through AllOrigins
-                    return axios.get(`https://allorigins.hexm.io/get?url=${encodeURIComponent('https://loripsum.net/api/1/short/plaintext')}`)
+                    // Fetch data from Loripsum API
+                    return axios.get(`http://localhost:8080/https://loripsum.net/api/1/medium/plaintext`)
                         .then(response => {
-                            const content = response.data.contents; // Access the contents field
+                            const content = response.data; 
                             setCache(prev => ({ ...prev, [id]: content }));
                             return content;
                         });
                 });
 
+                // Wait for all requests to complete
                 const results = await Promise.all(requests);
                 const tabData = results.map((content, index) => ({
                     id: index + 1,
@@ -47,6 +48,7 @@ const Tabs = () => {
         fetchTabs();
     }, [cache]);
 
+    // Loading and error states
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -55,6 +57,7 @@ const Tabs = () => {
         return <div>{error}</div>;
     }
 
+    // Render tabs and content
     return (
         <div className='tabs-container'>
             <ul className='tabs'>
