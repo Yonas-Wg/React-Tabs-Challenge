@@ -1,10 +1,25 @@
-# react-tabs-challenge
+# React Tabs Component
+A dynamic tabbed interface built with React that fetches text content from the Loripsum API. This component implements caching and state management to enhance performance and user experience.
 
-Implement the Following `Tabs` Component
+# Features
+- Fetches placeholder text for multiple tabs from an external API
+- Implements caching to minimize redundant API calls
+- Responsive design with easy navigation between tabs
 
-Fetch the text for the tabs from https://loripsum.net/ utilize the rest api there.
-Implement caching, state management
+# Installation
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Start the development server with `npm start`
 
-![Preview Gif](https://github.com/Mereb-Tech/react-tabs-challenge/blob/main/preview.gif)
+To avoid CORS issues, run a local proxy server (e.g., using cors-anywhere):
+- Install CORS Anywhere globally with `npm install -g cors-anywhere`
+- Start the server with `cors-anywhere` 
+- Run the server with `node server.js`
+- Use `http://localhost:8080/https://loripsum.net/api/1/short/plaintext` as your API endpoint
 
-<img width="979" alt="screenshot" src="https://user-images.githubusercontent.com/108453092/181007694-d9b59f74-5a09-480c-b562-30efc27dfe1a.png">
+# Usage
+Simply integrate the Tabs component into your React application to provide users with an interactive way to view content.
+
+# Video Demonstration
+[Watch the Video](https://drive.google.com/file/d/1pcf1NxjJQO_LsmFcBSVnYMDEbpUElJJN/view?usp=drive_link)
+
