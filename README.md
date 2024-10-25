@@ -21,3 +21,5 @@ Use http://localhost:8080/https://loripsum.net/api/1/short/plaintext as your API
 # Usage
 
 Simply integrate the Tabs component into your React application to provide users with an interactive way to view content.
+
+https://drive.google.com/file/d/1pBrLrWZMVzAfBmJHwe45iz9-ZEuYwPCa/view?usp=drive_link
