@@ -22,3 +22,7 @@ Simply integrate the Tabs component into your React application to provide users
 
 # Video Demonstration
 [Watch the Video](https://drive.google.com/file/d/1pcf1NxjJQO_LsmFcBSVnYMDEbpUElJJN/view?usp=drive_link)
+
+# Image Preview
+![Tabs Component Preview]()
+<img width="979" alt="screenshot" src="https://drive.google.com/file/d/1u8jbpF1OEHswJtXqilPDHsFVxiMuA-4p/view?usp=drive_link.jpg">
